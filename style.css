@@ -10,6 +10,8 @@ body {
   min-height: 2000px;
 }
 
+/* Hero */
+
 .hero::before {
   content: "";
   position: absolute;
@@ -19,6 +21,7 @@ body {
   height: 100%;
   background-image: url(img/background.jpg);
   background-size: cover;
+  background-position: center;
   z-index: -1;
   filter: grayscale();
 }
@@ -57,6 +60,20 @@ body {
   color: white;
 }
 
+/* Navbar */
+.my-navbar .navbar-brand,
+.my-navbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.my-navbar .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 /* Laptop */
 @media (max-width: 992px) {
@@ -76,6 +93,13 @@ body {
   .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
+  }
+
+  .my-navbar .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
   }
 }
 /* Hape */
